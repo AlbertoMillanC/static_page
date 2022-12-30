@@ -17,8 +17,8 @@ const featuredProject = projects[0]!;
 <html lang="en">
 	<head>
 		<MainHead
-			title="Alberto Millán: Personal Site"
-			description="Alberto Millán: Developer."
+			title="Desarrollo de paginas web"
+			my-2ription="¿Buscas una solución profesional y efectiva para tu negocio en línea? Ofrecemos servicios de diseño y desarrollo de páginas web y tiendas en línea personalizadas para adaptarnos a tus necesidades. Contamos con un equipo de expertos en tecnología y marketing que trabajarán contigo para crear una presencia en línea atractiva y efectiva para tu negocio. ¡Contáctanos hoy para más información y una cotización gratuita!"
 		/>
 		<style>
 			.wrapper {
@@ -113,14 +113,56 @@ const featuredProject = projects[0]!;
 				margin-top: 4rem;
 				margin-bottom: 2rem;
 			}
+			
+			
+			.roles {
+				display: flex; 
+				flex-wrap: wrap-reverse;
+				gap: 0.5em;
+				font-size: var(--f-d1);
+				
+			}
+			
+			.role1 {
+				position: relative;
+				display: flex;
+				white-space: nowrap;
+				font-weight: 400;
+				color: var(--t-fg);
+				padding: 0.25em 0.5em;
+				z-index: 2;
+				font-size: larger;
+			}
+
+			@media (min-width: 750px) {
+				.role1 {
+					font-size: var(--f-u3);
+				}
+			}
+
+			.role1:nth-of-type(1) .invert {
+				background-color: var(--c-pink);
+			}
+
+			.role1:nth-of-type(2) .invert {
+				background-color: var(--c-blue);
+			}
+
+			.role1:nth-of-type(3) .invert {
+				background-color: var(--c-green);
+			}
+
+			.role1:hover .invert {
+				clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+			}
 
 			.roles {
-				display: flex;
-				flex-wrap: wrap;
+				display: flex; 
+				flex-wrap: wrap-reverse;
 				gap: 0.5em;
 				font-size: var(--f-d1);
 			}
-
+			
 			.role {
 				position: relative;
 				display: inline-block;
@@ -169,7 +211,7 @@ const featuredProject = projects[0]!;
 				transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
 			}
 
-			.desc {
+			.my-2 {
 				font-size: var(--f-u1);
 				margin-top: 1.5rem;
 				margin-bottom: 0;
@@ -203,47 +245,51 @@ const featuredProject = projects[0]!;
 	</head>
 	<body>
 		<Nav />
-		<header class="hero">
-			<img
-				width="1600"
-				height="1131"
+		<header class="hero flex-1 ">
+			<img 
+				
 				class="img"
-				src="/assets/image_es.jpeg"
-				srcset="/assets/image_es.jpeg 800w,/assets/image_es.jpeg 1200w,/assets/image_es.jpeg 2400w"
-				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
+				src="/assets/image_es.jpg"
+				srcset="/assets/image_es.jpg 800w,/assets/image_es.jpg 1200w,/assets/image_es.jpg 2400w"
+				
 			/>
 			<div class="gradient"></div>
 			<div class="gradient2"></div>
 			<div class="overlay">
 				<h1 class="title">
-					<small class="subtitle">The personal site of</small>Alberto Millán
+					<small class="subtitle ">Compra un sitio web diseñado por:</small>Alberto Millán
 				</h1>
-				<div class="roles">
-					<span class="role">👩‍💻Web Developer <span class="invert">👩‍💻Web Developer</span></span>
+				<div class="roles	 md:flex">
+					<span class="role">👩‍💻Desarrollo Web<span class="invert">👩‍💻Web Developer</span></span>
 					<span class="role">🔧Sys Admin <span class="invert">🔧SysAdmin</span></span>
-					<span class="role">🗂DataBase  <span class="invert">🗂 DataBase </span></span>
+					<span class="role">🗂Bases de Datos  <span class="invert">🗂 DataBase </span></span>
+				</div >
+				<div class= "roles  ">
+					<p class="role1">☁ Cloud,</p>
+					<p class="role1">🔧Cyber Security, </p>
+					<p class="role1"> ✏️ copywriting.</p>
 				</div>
-				<p class="desc">☁ Cloud,🔧Cyber Security and ✏️ copywriting.</p>
+				
 			</div>
+			
 		</header>
 		<main class="wrapper">
 			<div class="grid">
-				<div class="section">
-					<h3 class="sectionTitle">Selected Work</h3>
+				<div class="section flex flex-auto md:flex-grid">
+					<h3 class="sectionTitle ">Seleccione un servicio</h3>
 					<PortfolioPreview project={featuredProject} />
 					<div class="buttonContainer">
-						<a href="/projects/" class="button">View All</a>
+						<a href="/projects/" class="button">Ver más</a>
 					</div>
 				</div>
 				<div class="section">
-					<h3 class="sectionTitle">About me</h3>
+					<h3 class="sectionTitle "></h3>
 					<p class="bio">
-						<span>Hello!</span> I’m Alberto, and this is my website. It was made using{' '}
-						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro</a>,
-						a new way to build static sites. This is just an example template for you to modify.
+						<span>Hola!</span> Soy Alberto,un profesional especializado en desarrollo web, sysadmin y DevOps. Ofrezco una {' '}
+						amplia gama de servicios de desarrollo web en diferentes tecnologías,
 					</p>
 					<p>
-						<a href="/about">Read more</a>
+						<a href="/about">Leer más</a>
 					</p>
 				</div>
 			</div>
