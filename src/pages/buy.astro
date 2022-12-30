@@ -1,0 +1,95 @@
+---
+import MainHead from '../components/MainHead.astro';
+import Footer from '../components/Footer.astro';
+import Nav from '../components/Nav.astro';
+---
+
+<html lang="en">
+	<head>
+		<MainHead title="About | Alberto Millán" description="About Alberto Millán Lorem Ipsum" />
+		<style>
+			.heroImg {
+				max-height: 24rem;
+				object-fit: cover;
+				overflow: hidden;
+				opacity: 1.0;
+			}
+
+			.heroImg img {
+				width: 100%;
+			}
+
+			.gradiente,
+			.gradiente2 {
+				background-image: url('/assets/mesh-gradient.jpg');
+				background-size: cover;
+				pointer-events: none;
+				mix-blend-mode: screen;
+				opacity:0.3;
+				width: 100%;
+				height: 100%;
+				position:absolute;
+				top: 0;
+				left: 0;
+				z-index: 2;
+			}
+
+			.gradiente2 {
+				mix-blend-mode: multiply;
+				background-size: cover;
+			}	
+
+			.bio {
+				font-size: var(--f-u1);
+				line-height: 2;
+				margin-top: 4em;
+			}
+
+			.wrapper.bio {
+				max-width: 50em;
+			}
+		</style>
+	</head>
+	<body>
+		<Nav />
+		<div class="wrapper">
+			<h1>Compra Ahora</h1>
+			
+			<div class="heroImg">
+				
+				<img
+					width="1400"
+					height="350"
+					src="/assets/banner_.jpg"
+					srcset="/assets/banner_.jpg 800w,/assets/banner_.jpg 1200w,/assets/banner_.jpg 2400w"
+					sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
+					
+				/>
+				
+				
+			
+				
+			</div>
+			<div class="bio wrapper">
+				<p>
+					Soy un profesional especializado en desarrollo web, sysadmin y DevOps. Ofrezco 
+					una amplia gama de servicios de desarrollo web en diferentes tecnologías,incluyendo 
+					diseño, desarrollo de páginas web y aplicaciones.
+				</p>
+				<p>
+					La implementación, gestión de sistemas, optimización de procesos de desarrollo y en
+					entrega continua. Estoy comprometido con ofrecer soluciones innovadoras, efectivas 
+					para mis clientes manteniendome actualizado en las últimas tendencias y tecnologías
+					del mundo digital. 
+				</p>
+				<p>
+					¡Contacta conmigo para más información y cómo puedo ayudarte 
+					a alcanzar tus objetivos en línea!
+				</p>
+				
+				
+			</div>
+		</div>
+		<Footer />
+	</body>
+</html>
