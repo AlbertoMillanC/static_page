@@ -5,6 +5,7 @@ import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
+import buttoncompra from '../components/ButtonCompra';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob<Project>('./project/**/*.md');
@@ -16,6 +17,7 @@ const featuredProject = projects[0]!;
 
 <html lang="en">
 	<head>
+		
 		<MainHead
 			title="Desarrollo de paginas web"
 			my-2ription="¿Buscas una solución profesional y efectiva para tu negocio en línea? Ofrecemos servicios de diseño y desarrollo de páginas web y tiendas en línea personalizadas para adaptarnos a tus necesidades. Contamos con un equipo de expertos en tecnología y marketing que trabajarán contigo para crear una presencia en línea atractiva y efectiva para tu negocio. ¡Contáctanos hoy para más información y una cotización gratuita!"
@@ -242,6 +244,7 @@ const featuredProject = projects[0]!;
 				margin-top: 2em;
 			}
 		</style>
+	
 	</head>
 	<body>
 		<Nav />
@@ -261,10 +264,11 @@ const featuredProject = projects[0]!;
 					<small class="subtitle ">Compra un sitio web diseñado por:</small>Alberto Millán
 				</h1>
 				<div class="roles">
-					<span class="role">📤Desarrollo Web<span class="invert">👩‍💻Web Developer</span></span>
-					<span class="role">👨🏻‍💻SysAdmin<span class="invert">🔧SysAdmin</span></span>
-					<span class="role">🗂Datos<span class="invert">🗂 DataBase </span></span>
+					<button class="role">📤Desarrollo Web<span class="invert">👩‍💻Web Developer</span></button>
+					<button class="role">👨🏻‍💻SysAdmin<span class="invert">🔧SysAdmin</span></button>
+					<button class="role">🗂Datos<span class="invert">🗂 Data </span></button>
 				</div >
+
 				<div class= "roles">
 					<p class="role1">☁Cloud</p>
 					<p class="role1">🔧CyberSecurity</p>
@@ -274,10 +278,13 @@ const featuredProject = projects[0]!;
 			</div>
 			
 		</header>
+	
 		<main class="wrapper">
 			<div class="grid">
 				<div class="section flex flex-auto md:flex-grid">
-					<h3 class="sectionTitle ">Seleccione un servicio</h3>
+					
+					<h3 class="sectionTitle "> Servicios</h3>
+					
 					<PortfolioPreview project={featuredProject} />
 					<div class="buttonContainer">
 						<a href="/projects/" class="button">Ver más</a>
@@ -286,7 +293,7 @@ const featuredProject = projects[0]!;
 				<div class="section">
 					<h3 class="sectionTitle"></h3>
 					<p class="bio">
-						<span>Hola!</span> Soy Alberto,un profesional especializado en desarrollo web, sysadmin y DevOps. Ofrezco una {' '}
+						<span>Hola!</span> Soy Alberto,un profesional especializado en desarrollo web, SysAdmin y DevOps. Ofrezco una {' '}
 						amplia gama de servicios de desarrollo web en diferentes tecnologías,
 					</p>
 					<p>
