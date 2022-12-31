@@ -2,12 +2,11 @@
 layout: ../../../layouts/project.astro
 title: Compra una tienda en linea
 client: Self
-publishDate: 2022-03-04 00:00:00
+publishDate: 2023-01-04 00:00:00
 img: https://images.pexels.com/photos/7310202/pexels-photo-7310202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 description: |
   Aprende los beneficios que puede aportar una tienda en línea para tu negocio y cómo crear y administrar una tienda en línea de manera efectiva. Descubre cómo promocionar tu tienda y mantener y actualizarla para aprovechar al máximo su potencial y aumentar tus ventas
 tags:
-  - marketing
   - tiendaenlínea
   - comercioelectrónico
 ---
@@ -20,13 +19,13 @@ Contar con una **tienda en línea** te permite llegar a un público más amplio 
 ## ¿Qué beneficios puede aportar una **tienda en línea** para tu negocio?
 Aquí te presentamos algunos de los beneficios que puedes obtener al contar con una **tienda en línea** para tu negocio:
 
-Mayor alcance: una **tienda en línea** te permite llegar a clientes potenciales que de otra manera podrían no conocer tu empresa. Esto es especialmente útil si vendes productos a nivel regional o nacional.
+**Mayor alcance**: una **tienda en línea** te permite llegar a clientes potenciales que de otra manera podrían no conocer tu empresa. Esto es especialmente útil si vendes productos a nivel regional o nacional.
 
-Mayor visibilidad: una **tienda en línea** te permite aparecer en los resultados de búsqueda de Google y otros motores de búsqueda. Esto puede ayudar a atraer a clientes que estén buscando productos similares al tuyo.
+**Mayor visibilidad**: una **tienda en línea** te permite aparecer en los resultados de búsqueda de Google y otros motores de búsqueda. Esto puede ayudar a atraer a clientes que estén buscando productos similares al tuyo.
 
-Mayor comodidad para tus clientes: con una **tienda en línea**, tus clientes pueden acceder a tus productos y realizar compras en cualquier momento y lugar. Además, pueden hacerlo de manera más cómoda y rápida.
+**Mayor comodidad para tus clientes**: con una **tienda en línea**, tus clientes pueden acceder a tus productos y realizar compras en cualquier momento y lugar. Además, pueden hacerlo de manera más cómoda y rápida.
 
-Mayor eficiencia: una **tienda en línea** te permite centralizar la información de tus productos y facilitar el proceso de venta. Esto puede ayudar a ahorrar tiempo y esfuerzo en tareas administrativas y de atención al cliente.
+**Mayor eficiencia**: una **tienda en línea** te permite centralizar la información de tus productos y facilitar el proceso de venta. Esto puede ayudar a ahorrar tiempo y esfuerzo en tareas administrativas y de atención al cliente.
 
 ## ¿Cómo puedes crear y administrar tu **tienda en línea**?
 Si estás interesado en crear una **tienda en línea** para tu negocio, aquí te presentamos algunos pasos que puedes seguir:
