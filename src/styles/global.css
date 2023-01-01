@@ -96,3 +96,10 @@ h1 {
 .text-custom-color {
 	color: #46b4ff;
   }
+  .cardBuy {
+	
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');
+    padding: theme('spacing.1');
+    box-shadow: theme('boxShadow.xl');
+  }

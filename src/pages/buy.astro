@@ -1,9 +1,10 @@
 ---
-import Card from '../components/cardBuy';
+import CardBuy from '../components/cardBuy.astro';
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
 import Button from '../components/ButtonCompra';
+
 ---
 
 <html lang="en">
@@ -54,9 +55,15 @@ import Button from '../components/ButtonCompra';
 	</head>
 	<body>
 		<Nav />
-		<div >
-			<Card/>
+		<div class=" md:w-1/1 md:h-1/2  md:grid grid-cols-1 gap-2  md:grid-cols-4 px-20 py-10 " >
 			
+			<CardBuy title="Chat automatizados" description="Un chat automatizado para ventas es una herramienta que permite interactuar con los clientes de forma automatizada a través de una página web o aplicación móvil. Utiliza reglas y mensajes predefinidos para proporcionar información y ayudar a los clientes a tomar una decisión de compra. También puede enviar mensajes de seguimiento o promociones para fomentar la repetición de compra."  tag="#TiendaenLinea"/>
+			<CardBuy title="Tienda virtual" description="Una tienda virtual o e-commerce es una plataforma en línea que permite a los consumidores comprar productos o servicios de forma online. Estas tiendas suelen ofrecer un catálogo de productos o servicios, un carrito de compra y un proceso de pago seguro para facilitar la compra de los clientes. Las tiendas virtuales también suelen incluir funcionalidades como el seguimiento del pedido, la gestión de devoluciones y la atención al cliente. Las tiendas virtuales son una forma conveniente y segura de comprar productos y servicios en línea."  tag="#TiendaenLinea"/>
+			<CardBuy title="Apps" description="Una aplicación de ventas es una herramienta móvil que permite a los consumidores comprar productos o servicios de forma online a través de su dispositivo móvil. Estas aplicaciones suelen incluir un catálogo de productos o servicios, un carrito de compra y un proceso de pago seguro para facilitar la compra de los clientes. "  tag="#TiendaenLinea"/>
+			<CardBuy title="Páginas Web" description="Una landing page para ventas es una página web diseñada para convertir a los visitantes en clientes. Esta página suele incluir información detallada sobre un producto o servicio específico, así como un botón de compra o formulario de contacto para facilitar la conversión de los visitantes. Las landing pages para ventas suelen ser una parte importante de una estrategia de marketing digital y suelen ser optimizadas para mejorar la tasa de conversión. La finalidad de una landing page para ventas es convencer a los visitantes de que adquieran un producto o contraten un servicio."  tag="#TiendaenLinea" />
+
+
+
 		</div>
 		<Footer />
 	</body>

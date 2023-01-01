@@ -1,0 +1,27 @@
+---
+const { title, description, alt, img, tag, link } = Astro.props;
+---
+
+<button class="md:grid cardBuy">
+  <a href="/about">
+    <img
+      class="w-full h-full object-cover"
+      src="/assets/image_4.jpg"
+      alt="Mi imagen"
+    />
+  </a>
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{title}</div>
+    </div>
+    <div class="hidden hover:block">
+      <p class="text-gray-700 text-sm">
+        {description}
+      </p>
+    </div>
+    <div class="px-6 py-4">
+      <span
+        class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+        >{tag}
+      </span>
+    </div>
+</button>
