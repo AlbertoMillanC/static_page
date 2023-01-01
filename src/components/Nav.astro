@@ -1,7 +1,16 @@
+---
+import type { NavComponent } from '../types';
+import PortfolioPreview from '../components/PortfolioNav.astro';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+---
+
 <nav>
 	<a class="link" href="/">
 		<div class="monogram">AMC</div>
 	</a>
+
+	
 	<a class="link" href="/projects/">Portafolio</a>
 	<a class="link" href="/buy/">Comprar</a>
 	<a class="link" href="/about/">Blog</a>

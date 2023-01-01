@@ -6,6 +6,8 @@ import Footer from '../components/Footer.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 import type { Project } from '../types';
 import buttoncompra from '../components/ButtonCompra';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = await Astro.glob<Project>('./project/**/*.md');
@@ -281,7 +283,7 @@ const featuredProject = projects[0]!;
 	
 		<main class="wrapper">
 			<div class="grid">
-				<div class="section flex flex-auto md:flex-grid">
+				<div class="section">
 					
 					<h3 class="sectionTitle "> Servicios</h3>
 					
