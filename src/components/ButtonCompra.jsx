@@ -21,6 +21,13 @@ function Button() {
       </div>
       <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20    ">
         <button onClick={notify}>subscribirse</button>
+        <ul class= "text-gray-600">
+        <li>es </li>
+        <li>es </li>
+        <li>es </li>
+        </ul>
+        
+
       </div>
       <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20     ">
         <button onClick={notify}>subscribirse</button>
@@ -28,7 +35,7 @@ function Button() {
       <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20     ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class=" text-custom-color mt-1text-center   md:flex-auto px-20       ">
+      <div class=" text-custom-color mt-1 text-center   md:flex-auto px-20       ">
         <button onClick={notify}>subscribirse</button>
       </div>
       <ToastContainer />
