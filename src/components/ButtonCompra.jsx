@@ -7,8 +7,8 @@ function Button() {
   const notify = () => toast("Gracias por suscribirse");
 
   return (
-    <div class="    md:flex  md:flex-auto ">
-      <div class=" text-center grid grid-cols-1 p-1  md:flex flex-auto  > ">
+    <div class=" md:flex  ">
+      <div class="    mt-1 text-center md:flex-auto px-20    ">
         <button
           onClick={() => {
             toast.success("Gracias por su compra");
@@ -18,16 +18,16 @@ function Button() {
           {comprar ? "comprar" : "Comprar"}
         </button>
       </div>
-      <div class=" text-center grid grid-cols-1 p-1  md:flex flex-auto  ">
+      <div class="  mt-1 text-center md:flex-auto px-20    ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class="  text-center grid grid-cols-1 p-1  md:flex flex-auto  ">
+      <div class="  mt-1 text-center md:flex-auto px-20     ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class="  text-center grid grid-cols-1 p-1  md:flex flex-auto   ">
+      <div class="  mt-1 text-center md:flex-auto px-20     ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class="  text-center grid grid-cols-1 p-1  md:flex flex-auto  ">
+      <div class=" mt-1text-center md:flex-auto px-20       ">
         <button onClick={notify}>subscribirse</button>
       </div>
       <ToastContainer />
