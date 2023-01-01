@@ -2,18 +2,20 @@
 import Button from '../components/ButtonCompra';
 const currentYear = new Date().getFullYear();
 ---
-
+<div >
+	
 <footer>
 	<div class=" flex flex-row px-10 ">
 	<Button client:load />
 	</div>
 
-	<div class="py-10">
-	&copy; {currentYear}Alberto Millán C
+	<div class="grip text-center py-10">
+		Alberto Millán C <br>  &copy;{currentYear} 
 	<small class="byline">🚀 Construido con Astro</small>
 	</div>
 
 </footer>
+</div>
 <style>
 	footer {
 		text-align: center;
