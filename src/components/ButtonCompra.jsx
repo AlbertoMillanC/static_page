@@ -8,7 +8,8 @@ function Button() {
 
   return (
     <div class=" md:flex  ">
-      <div class="    mt-1 text-center md:flex-auto px-20    ">
+      <div class="    text-custom-color mt-1 text-center   md:flex-auto px-20    ">
+        
         <button
           onClick={() => {
             toast.success("Gracias por su compra");
@@ -18,16 +19,16 @@ function Button() {
           {comprar ? "comprar" : "Comprar"}
         </button>
       </div>
-      <div class="  mt-1 text-center md:flex-auto px-20    ">
+      <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20    ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class="  mt-1 text-center md:flex-auto px-20     ">
+      <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20     ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class="  mt-1 text-center md:flex-auto px-20     ">
+      <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20     ">
         <button onClick={notify}>subscribirse</button>
       </div>
-      <div class=" mt-1text-center md:flex-auto px-20       ">
+      <div class=" text-custom-color mt-1text-center   md:flex-auto px-20       ">
         <button onClick={notify}>subscribirse</button>
       </div>
       <ToastContainer />
@@ -36,3 +37,5 @@ function Button() {
 }
 
 export default Button;
+
+
