@@ -1,9 +1,9 @@
 ---
-layout: ../../../layouts/project.astro
-title: xxxxxxxxCompra una tienda en linea
+layout: ../../../layouts/projectBuy.astro
+title: Apps
 client: Self
 publishDate: 2023-01-04 00:00:00
-img: https://images.pexels.com/photos/7310202/pexels-photo-7310202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+img:  https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg
 description: |
   Aprende los beneficios que puede aportar una tienda en línea para tu negocio y cómo crear y administrar una tienda en línea de manera efectiva. Descubre cómo promocionar tu tienda y mantener y actualizarla para aprovechar al máximo su potencial y aumentar tus ventas
 tags:
