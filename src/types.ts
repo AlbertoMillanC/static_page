@@ -7,7 +7,7 @@ export interface Project {
 	img: string;
 }
 
-export interface NavComponent {
+export interface cardBuy {
 	title: string;
 	client: string;
 	description: string;

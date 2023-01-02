@@ -1,69 +1,41 @@
 ---
-import CardBuy from '../components/cardBuy.astro';
 import MainHead from '../components/MainHead.astro';
 import Footer from '../components/Footer.astro';
 import Nav from '../components/Nav.astro';
-import Button from '../components/ButtonCompra';
+import PortfolioPreview from '../components/PortfolioCardBuy.astro';
+import type { Project } from '../types';
 
+const projects = (await Astro.glob<Project>('./project/**/*.md'))
+	.filter(({ frontmatter }) => !!frontmatter.publishDate)
+	.sort(
+		(a, b) =>
+			new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
+	);
 ---
-
 <html lang="en">
 	<head>
-		<MainHead title="About | Alberto Millán" description="Compra tu pagina web " />
+		<MainHead
+			title="Productos | Alberto Millán"
+			description="Compre una pagína web o tienda virtual"
+		/>
 		<style>
-			.heroImg {
-				max-height: 24rem;
-				object-fit: cover;
-				overflow: hidden;
-				opacity: 1.0;
+			.grid {
+				display: grid;
+				grid-gap: 3rem;
 			}
-
-			.heroImg img {
-				width: 100%;
-			}
-
-			.gradiente,
-			.gradiente2 {
-				background-image: url('/assets/mesh-gradient.jpg');
-				background-size: cover;
-				pointer-events: none;
-				mix-blend-mode: screen;
-				opacity:0.3;
-				width: 100%;
-				height: 100%;
-				position:absolute;
-				top: 0;
-				left: 0;
-				z-index: 2;
-			}
-
-			.gradiente2 {
-				mix-blend-mode: multiply;
-				background-size: cover;
-			}	
-
-			.bio {
-				font-size: var(--f-u1);
-				line-height: 2;
-				margin-top: 4em;
-			}
-
-			.wrapper.bio {
-				max-width: 50em;
+			.title {
+				margin-top: 2rem;
+				margin-bottom: 2rem;
 			}
 		</style>
 	</head>
 	<body>
 		<Nav />
-		<div class=" md:w-1/1 md:h-1/2  md:grid grid-cols-1 gap-2  md:grid-cols-4 px-20 py-10 " >
-			
-			<CardBuy title="Chat automatizados" description="Un chat automatizado para ventas es una herramienta que permite interactuar con los clientes de forma automatizada a través de una página web o aplicación móvil. Utiliza reglas y mensajes predefinidos para proporcionar información y ayudar a los clientes a tomar una decisión de compra. También puede enviar mensajes de seguimiento o promociones para fomentar la repetición de compra."  tag="#TiendaenLinea"/>
-			<CardBuy title="Tienda virtual" description="Una tienda virtual o e-commerce es una plataforma en línea que permite a los consumidores comprar productos o servicios de forma online. Estas tiendas suelen ofrecer un catálogo de productos o servicios, un carrito de compra y un proceso de pago seguro para facilitar la compra de los clientes. Las tiendas virtuales también suelen incluir funcionalidades como el seguimiento del pedido, la gestión de devoluciones y la atención al cliente. Las tiendas virtuales son una forma conveniente y segura de comprar productos y servicios en línea."  tag="#TiendaenLinea"/>
-			<CardBuy title="Apps" description="Una aplicación de ventas es una herramienta móvil que permite a los consumidores comprar productos o servicios de forma online a través de su dispositivo móvil. Estas aplicaciones suelen incluir un catálogo de productos o servicios, un carrito de compra y un proceso de pago seguro para facilitar la compra de los clientes. "  tag="#TiendaenLinea"/>
-			<CardBuy title="Páginas Web" description="Una landing page para ventas es una página web diseñada para convertir a los visitantes en clientes. Esta página suele incluir información detallada sobre un producto o servicio específico, así como un botón de compra o formulario de contacto para facilitar la conversión de los visitantes. Las landing pages para ventas suelen ser una parte importante de una estrategia de marketing digital y suelen ser optimizadas para mejorar la tasa de conversión. La finalidad de una landing page para ventas es convencer a los visitantes de que adquieran un producto o contraten un servicio."  tag="#TiendaenLinea" />
-
-
-
+		<div class="wrapper">
+			<h1 class="title">Comprar</h1>
+			<div class="grid">
+				{projects.map((project) => <PortfolioPreview project={project} />)}
+			</div>
 		</div>
 		<Footer />
 	</body>
