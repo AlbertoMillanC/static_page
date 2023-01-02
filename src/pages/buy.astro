@@ -33,7 +33,7 @@ const projects = (await Astro.glob<Project>('./projectBuy/**/*.md'))
 		<Nav />
 		<div class="wrapper">
 			<h1 class="title">Comprar</h1>
-			<div class="grid">
+			<div class=" grid md:grid-cols-2 md:w-full md:h-full  ">
 				{projects.map((project) => <PortfolioPreview project={project} />)}
 			</div>
 		</div>
