@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/project.astro
-title: ES EL CAMBIO una Pagina Web
+title: xxxxxxxCompra una Pagina Web
 client: Self
 publishDate: 2023-01-04 00:00:00
 img: https://images.pexels.com/photos/4050316/pexels-photo-4050316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
