@@ -7,7 +7,7 @@ export interface Project {
 	img: string;
 }
 
-export interface cardBuy {
+export interface cardBuy1 {
 	title: string;
 	client: string;
 	description: string;
