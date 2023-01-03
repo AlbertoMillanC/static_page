@@ -8,7 +8,7 @@ description: |
   Aprende los beneficios que puede aportar una tienda en línea para tu negocio y cómo crear y administrar una tienda en línea de manera efectiva. Descubre cómo promocionar tu tienda y mantener y actualizarla para aprovechar al máximo su potencial y aumentar tus ventas
 tags:
   - tiendaenlínea
-  - comercioelectrónico
+  - comercio electrónico
 ---
 
 ## ¿Por qué debes tener una **tienda en línea** para tu negocio?

@@ -5,10 +5,11 @@ client: Self
 publishDate: 2023-01-04 00:00:00
 img:  https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg
 description: |
-  Aprende los beneficios que puede aportar una tienda en línea para tu negocio y cómo crear y administrar una tienda en línea de manera efectiva. Descubre cómo promocionar tu tienda y mantener y actualizarla para aprovechar al máximo su potencial y aumentar tus ventas
+  ¡Haz crecer tu negocio con nuestro diseño de aplicaciones para iOS y Android! Ofrecemos soluciones personalizadas para adaptarnos a tus necesidades y a las de tus clientes. ¡Contáctanos hoy para una cotización gratuita y empieza a sacar el máximo partido a tu negocio en línea!
 tags:
-  - tiendaenlínea
-  - comercioelectrónico
+  - App
+  - iOS
+  - ANDROID
 ---
 
 ## ¿Por qué debes tener una **tienda en línea** para tu negocio?
