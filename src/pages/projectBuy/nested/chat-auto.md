@@ -6,10 +6,11 @@ publishDate: 2023-01-04 00:00:00
 img:  https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 
 description: |
-  Aprende los beneficios que puede aportar una tienda en línea para tu negocio y cómo crear y administrar una tienda en línea de manera efectiva. Descubre cómo promocionar tu tienda y mantener y actualizarla para aprovechar al máximo su potencial y aumentar tus ventas
+ Un chat automatizado para ventas es una herramienta que permite interactuar con los clientes de forma automatizada a través de una página web o aplicación móvil. Utiliza reglas y mensajes predefinidos para proporcionar información y ayudar a los clientes a tomar una decisión de compra. También puede enviar mensajes de seguimiento o promociones para fomentar la repetición de compra.
 tags:
-  - tiendaenlínea
-  - comercioelectrónico
+  - Boot
+  - Chat IA
+  - Robot
 ---
 
 ## ¿Por qué debes tener una **tienda en línea** para tu negocio?

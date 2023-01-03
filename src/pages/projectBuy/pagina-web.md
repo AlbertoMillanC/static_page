@@ -1,14 +1,14 @@
 ---
 layout: ../../layouts/projectBuy.astro
-title: Compra una Pagina Web
+title: Pagina Web
 client: Self
 publishDate: 2023-01-04 00:00:00
 img: https://images.pexels.com/photos/4050316/pexels-photo-4050316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 description: |
   Aprende por qué es importante contar con un sitio web para tu negocio y cómo contratar un servicio de desarrollo web para mejorar tu presencia en línea. Descubre los beneficios que puede aportar un sitio web y cómo mantenerlo y actualizarlo para aprovechar al máximo su potencial.
 tags:
-  - sitio web
-  - tiendaenlínea
+  - Sitio web
+  - Landing page
   
 ---
 
