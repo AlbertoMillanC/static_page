@@ -1,7 +1,6 @@
 ---
 layout: ../../../layouts/projectBuy.astro
-title: Chat Automatizado
-client: Self
+title: Chat IA
 publishDate: 2023-01-04 00:00:00
 img:  https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 

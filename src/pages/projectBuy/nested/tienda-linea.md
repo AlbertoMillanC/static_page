@@ -1,6 +1,6 @@
 ---
 layout: ../../../layouts/projectBuy.astro
-title: Tienda en linea
+title: Tienda EN LÍNEA
 client: Self
 publishDate: 2023-01-04 00:00:00
 img: https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
