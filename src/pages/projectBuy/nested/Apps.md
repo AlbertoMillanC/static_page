@@ -3,7 +3,8 @@ layout: ../../../layouts/projectBuy.astro
 title: Apps
 client: Self
 publishDate: 2023-01-04 00:00:00
-img:  https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg
+img:  https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+
 description: |
   ¡Haz crecer tu negocio con nuestro diseño de aplicaciones para iOS y Android! Ofrecemos soluciones personalizadas para adaptarnos a tus necesidades y a las de tus clientes. ¡Contáctanos hoy para una cotización gratuita y empieza a sacar el máximo partido a tu negocio en línea!
 tags:
