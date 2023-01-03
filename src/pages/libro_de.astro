@@ -1,8 +1,9 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
 ---
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -14,17 +15,86 @@ import Nav from '../components/Nav.astro';
   <body>
     <Nav />
     <h1 class="px-20 py-10 text-start">Libro de reclamaciones</h1>
-    <p class="px-20 py-5 text-left text-black">
-      
-    </p>
-	<p class="px-20 py-1 text-left text-black">
-      
-    </p>
-    <p class="px-20 py-1 text-left text-black">
-      
-    </p>
+    <div class="px-20 py-5 text-left text-black">
+      <form
+        class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
+        action="/procesar-reclamacion"
+        method="post"
+      >
+        <h3 class="text-2xl font-bold mb-4">Formulario de Reclamación</h3>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="nombre"
+            >Nombre:</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-1/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="text"
+            id="nombre"
+            name="nombre"
+            pattern="[A-Za-z]*"
+            maxlength="60"
+            placeholder="Escribe aquí tus nombres y apellidos, ingrese solo letras"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email"
+            >Correo electrónico:</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-1/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Este debe ser el formato de tu correo electrónico: nombre@empresa.com"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label
+            class="block text-gray-700 text-sm font-bold mb-2"
+            for="telefono">Teléfono:</label
+          >
+          <input
+            class="shadow appearance-none border rounded w-1/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            type="tel"
+            id="telefono"
+            name="telefono"
+            pattern="[0-9]*"
+            placeholder="Escribe solo números"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="motivo"
+            >Motivo de la reclamación:</label
+          >
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="motivo"
+            name="motivo"
+            rows="5"
+            maxlength="1800"
+            placeholder="Coloca aquí el motivo de tu reclamo"
+            required></textarea>
+        </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="fecha_hora">Fecha y hora:</label>
+          <input class="shadow appearance-none border rounded w-1/1 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="datetime-local" id="fecha_hora" name="fecha_hora" required>
+        </div>
+        <div class="flex ite ms-center justify-between">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            type="submit"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+    <p class="px-20 py-1 text-left text-black"></p>
+    <p class="px-20 py-1 text-left text-black"></p>
 
     <Footer />
   </body>
 </html>
-
