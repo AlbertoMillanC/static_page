@@ -12,13 +12,13 @@ function Button() {
 
   return (
     <div class=" md:flex grid grid-cols-1 md:px-20  text-custom-color mt-1  md:text-left text-right md:flex-auto px-9  py-1   ">
-      <button onClick={notify}><Compras /></button>
+      <Compras />
 
-      <button onClick={notify}><Links /></button>
+      <Links />
 
-      <button onClick={notify}><Suscripcion /></button>
+      <Suscripcion />
 
-      <button onClick={notify}><Contacto /></button>
+      <Contacto />
 
       <ToastContainer />
     </div>

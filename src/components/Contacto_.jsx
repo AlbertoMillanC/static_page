@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 
 const Contacto = () => {
@@ -10,11 +9,11 @@ const Contacto = () => {
       {showLinks && (
         <div >
           <p>Puedes contactarme a través de:</p>
-          <a href="https://t.me/Albertomillanc">Telegram</a>
+          <a href="https://t.me/Albertomillanc" target="_blank" rel="noopener noreferrer">Telegram</a>
           <br />
-          <a href="slack:Alberto Millán">Slack</a>
+          <a href="slack:Alberto Millán" target="_blank" rel="noopener noreferrer">Slack</a>
           <br />
-          <a href="https://wa.me/51+983+824+132">WhatsApp</a>
+          <a href="https://wa.me/51+983+824+132" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       )}
     </div>
@@ -22,4 +21,3 @@ const Contacto = () => {
 };
 
 export default Contacto;
-
