@@ -9,6 +9,7 @@ function Compras() {
         onClick={() => {
           setMostrarCompras(!mostrarCompras);
         }}
+        title="Click para ver"
       >Comprar 🔽  
       </button>
       {mostrarCompras && (
