@@ -40,16 +40,16 @@ function Button() {
           <div class="text-gray-500">
             <ul>
               <li>
-                <a href="#">Política de privacidad </a>
+                <a href="Privacidad">Política de privacidad </a>
               </li>
               <li>
-                <a href="#">Términos y condiciones </a>
+                <a href="/terminos">Términos y condiciones </a>
               </li>
             <li>
-                <a href="#">Política de Cookies </a>
+                <a href="/politicas_cookies">Política de Cookies </a>
               </li>
               <li>
-                <a href="#">📖Libro de reclamaciones </a>
+                <a href="/libro_de">📖Libro de reclamaciones </a>
               </li>
             </ul>
           </div>

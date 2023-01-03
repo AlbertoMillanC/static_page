@@ -1,42 +1,44 @@
 ---
-import MainHead from '../components/MainHead.astro';
-import Footer from '../components/Footer.astro';
-import Nav from '../components/Nav.astro';
-import PortfolioPreview from '../components/PortfolioCardBuy.astro';
-import type { Project } from '../types';
+import MainHead from "../components/MainHead.astro";
+import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.astro";
+import PortfolioPreview from "../components/PortfolioCardBuy.astro";
+import type { Project } from "../types";
 
-const projects = (await Astro.glob<Project>('./projectBuy/**/*.md'))
-	.filter(({ frontmatter }) => !!frontmatter.publishDate)
-	.sort(
-		(a, b) =>
-			new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf()
-	);
+const projects = (await Astro.glob<Project>("./projectBuy/**/*.md"))
+  .filter(({ frontmatter }) => !!frontmatter.publishDate)
+  .sort(
+    (a, b) =>
+      new Date(b.frontmatter.publishDate).valueOf() -
+      new Date(a.frontmatter.publishDate).valueOf()
+  );
 ---
+
 <html lang="en">
-	<head>
-		<MainHead
-			title="Productos | Alberto Millán"
-			description="Compre una pagína web o tienda virtual"
-		/>
-		<style>
-			.grid {
-				display: grid;
-				grid-gap: 3rem;
-			}
-			.title {
-				margin-top: 2rem;
-				margin-bottom: 2rem;
-			}
-		</style>
-	</head>
-	<body>
-		<Nav />
-		<div class="wrapper">
-			<h1 class="title">Comprar</h1>
-			<div class=" grid w-full h-full md:grid-cols-2 md:w-full md:h-full  ">
-				{projects.map((project) => <PortfolioPreview project={project} />)}
-			</div>
-		</div>
-		<Footer />
-	</body>
+  <head>
+    <MainHead
+      title="Productos | Alberto Millán"
+      description="Compre una pagína web o tienda virtual"
+    />
+    <style>
+      .grid {
+        display: grid;
+        grid-gap: 3rem;
+      }
+      .title {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <div class="wrapper">
+      <h1 class="title">Comprar</h1>
+      <div class="grid w-full h-full md:grid-cols-2 md:w-full md:h-full">
+        {projects.map((project) => <PortfolioPreview project={project} />)}
+      </div>
+    </div>
+    <Footer />
+  </body>
 </html>
