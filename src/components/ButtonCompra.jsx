@@ -1,3 +1,5 @@
+import Contacto from "./Contacto_";
+import Suscripcion from "./Subscription";
 import Compras from "./Compras";
 import Links from "./Links";
 import { useState } from "react";
@@ -6,22 +8,17 @@ import "react-toastify/dist/ReactToastify.css";
 
 function Button() {
   const [comprar, setComprar] = useState(false);
-  const notify = () => toast("Gracias por suscribirse");
+  const notify = () => toast("Politicas y condiciones de la pagina");
 
   return (
-    <div class=" md:flex  ">
-      <div>
-        <Compras  />
-      </div>
+    <div class=" md:flex grid grid-cols-1 md:px-20  text-custom-color mt-1  md:text-left text-right md:flex-auto px-9  py-1   ">
+      <button onClick={notify}><Compras /></button>
 
-      <div>
-        <Links />
-      </div>
+      <button onClick={notify}><Links /></button>
 
-      
-      <div class="  text-custom-color mt-1 text-left   md:flex-auto px-20     ">
-        <button onClick={notify}>Contacto</button>
-      </div>
+      <button onClick={notify}><Suscripcion /></button>
+
+      <button onClick={notify}><Contacto /></button>
 
       <ToastContainer />
     </div>

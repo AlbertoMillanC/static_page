@@ -9,8 +9,7 @@ function Compras() {
         onClick={() => {
           setMostrarCompras(!mostrarCompras);
         }}
-      >
-        Comprar 🔽  
+      >Comprar 🔽  
       </button>
       {mostrarCompras && (
         <div className="text-cyan-600">

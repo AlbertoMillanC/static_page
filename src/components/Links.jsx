@@ -7,7 +7,7 @@ function Links() {
   return (
     <div className="text-custom-color mt-1 text-left md:flex-auto px-20">
       {/* Al hacer clic en el botón, cambiamos el estado de showLinks */}
-      <button onClick={() => setShowLinks(!showLinks)}>Legales   🔽</button>
+      <button onClick={() => setShowLinks(!showLinks)}>Legales 🔽</button>
       {/* Si showLinks es true, mostramos los enlaces */}
       {showLinks && (
         <div>
