@@ -70,7 +70,7 @@ img {
 }
 
 a {
-	color: var(--t-active);
+	color: var(---t-fg);
 }
 
 h1 {

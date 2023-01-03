@@ -8,27 +8,53 @@ function Button() {
 
   return (
     <div class=" md:flex  ">
-      <div class="    text-custom-color mt-1 text-center   md:flex-auto px-20    ">
-        <button
+      <div class=" mt-1 text-center   md:flex-auto px-20    ">
+        <button class="text-custom-color"
           onClick={() => {
             toast.success("Gracias por su compra");
             setComprar(!comprar);
           }}
         >
-          {comprar ? "comprar" : "Comprar"}
+          {comprar ? "Gracias" : "Comprar"}
         </button>
+        <div class="  text-gray-500">
+            <ul>
+              <li>
+                <a class="link"href="https://albertomillan.co/projectBuy/nested/Apps/">Apps </a>
+              </li>
+              <li>
+                <button href="https://albertomillan.co/projectBuy/nested/tienda-linea/">Tienda en Línea </button>
+              </li>
+            <li>
+                <button href="https://albertomillan.co/projectBuy/nested/chat-auto/">Chat Automatizado </button>
+              </li>
+              <li>
+                <button href="https://albertomillan.co/projectBuy/pagina-web/">Pagína Web </button>
+              </li>
+            </ul>
+          </div>
+
       </div>
-      <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20    ">
+      <div class="text-custom-color mt-1 text-center   md:flex-auto px-20    ">
         <button onClick={notify}>Legales</button>
-      <div>
-      <ul class="text-gray-600  grid ">
-          <button class="border-r-1 mt-1">Política de privacidad </button>
-          <button class="border-r-1 mt-1">Términos y condiciones </button>
-          <button class="border-r-1 mt-1">Política de Cookies </button>
-          <button class="border-r-1 mt-1">📖Libro de reclamaciones </button>
-        </ul>
+          <div class="text-gray-500">
+            <ul>
+              <li>
+                <a href="#">Política de privacidad </a>
+              </li>
+              <li>
+                <a href="#">Términos y condiciones </a>
+              </li>
+            <li>
+                <a href="#">Política de Cookies </a>
+              </li>
+              <li>
+                <a href="#">📖Libro de reclamaciones </a>
+              </li>
+            </ul>
+          </div>
       </div>
-      </div>
+
       <div class="  text-custom-color mt-1 text-center   md:flex-auto px-20     ">
         <button onClick={notify}>Subscribirse</button>
       </div>
