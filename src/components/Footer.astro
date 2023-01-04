@@ -1,4 +1,5 @@
 ---
+import DateYear from './date';
 import { Component } from 'react';
 import Button from '../components/ButtonCompra';
 
@@ -13,7 +14,7 @@ const currentYear = new Date().getFullYear();
 	</div>
 
 	<div class="grip text-center py-10">
-		Alberto Millán C <br>  &copy;{currentYear} 
+		Alberto Millán C <br>  <DateYear/>
 	<small class="byline">🚀 Construido con Astro</small>
 	</div>
 	
