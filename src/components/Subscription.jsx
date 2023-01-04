@@ -5,7 +5,7 @@ const Suscripcion = () => {
   };
 
   return (
-    <div className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800">
+    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-800">
       <button onClick={handleClick}  title="Click para ver">Suscripción 🔽 </button>
     </div>
   );

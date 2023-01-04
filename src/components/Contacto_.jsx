@@ -14,7 +14,7 @@ const Contacto = () => {
       </button>
       {showLinks && (
         <div>
-          <p>Puedes contactarme a través de:</p>
+          <p class= "text-black">Puedes contactarme a través de:</p>
           <a
             href="https://t.me/Albertomillanc"
             target="_blank"

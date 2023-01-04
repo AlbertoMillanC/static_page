@@ -1,3 +1,4 @@
+import VolverAlComienzo from "./scroll";
 import Contacto from "./Contacto_";
 import Suscripcion from "./Subscription";
 import Compras from "./Compras";
@@ -11,14 +12,23 @@ function Button() {
   const notify = () => toast("Politicas y condiciones de la pagina");
 
   return (
-    <div class=" md:flex grid grid-cols-1 md:px-20  text-custom-color mt-1  md:text-left text-right md:flex-auto px-9  py-1   ">
-      <Compras />
+    <div class=" md:flex md:w-full md:h-full grid grid-cols-1 md:px-20  text-custom-color mt-1  md:text-left text-right md:flex-auto px-9  py-1   ">
+      <div class="w-full mt-2">
+        <Compras />
+      </div>
 
-      <Links />
-
-      <Suscripcion />
-
-      <Contacto />
+      <div class="w-full mt-2">
+        <Links />
+      </div>
+      <div class="w-full mt-2">
+        <Suscripcion />
+      </div>
+      <div class="w-full mt-2">
+        <Contacto />
+      </div>
+      <div class="w-full mt-2">
+        <VolverAlComienzo />
+      </div>
 
       <ToastContainer />
     </div>
