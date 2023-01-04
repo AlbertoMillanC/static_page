@@ -42,28 +42,28 @@ function Compras() {
               </a>
             </li>
             <li>
-              <button
+              <a
                 className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
                 href="https://albertomillan.co/projectBuy/nested/tienda-linea/"
               >
                 Tienda en Línea{" "}
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
                 className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
                 href="https://albertomillan.co/projectBuy/nested/chat-auto/"
               >
                 Chat Automatizado{" "}
-              </button>
+              </a>
             </li>
             <li>
-              <button
+              <a
                 className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
                 href="https://albertomillan.co/projectBuy/pagina-web/"
               >
                 Pagína Web{" "}
-              </button>
+              </a>
             </li>
           </ul>
         </div>
