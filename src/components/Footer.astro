@@ -1,41 +1,40 @@
 ---
-import DateYear from './date';
-import { Component } from 'react';
-import Button from '../components/ButtonCompra';
-
+import DateYear from "./date";
+import { Component } from "react";
+import Button from "../components/ButtonCompra";
 
 const currentYear = new Date().getFullYear();
 ---
-<div class=" background:#05091e px-1 py-1">
-	
-<footer>
-	<div >
-	<Button client:load/>
-	</div>
 
-	<div class="container justify-center flex flex-auto  ">
-		   <DateYear/> 	
-		
-	</div>
-	
-	
+<div class="colorfood px-0 py-0">
+  <footer class="py-5 px-0">
+    <div>
+      <Button client:load />
+    </div>
 
-</footer>
+    <div class="container justify-center flex flex-auto">
+      <DateYear />
+    </div>
+  </footer>
 </div>
 <style>
-	footer {
-		text-align: center;
-		padding-top: 8rem;
-		padding-right: 2rem;
-		padding-bottom: 4rem;
-		padding-left: 2rem;
-	}
+  footer {
+    text-align: center;
+    padding-top: 8rem;
+    padding-right: 2rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+  }
+  .colorfood {
+    background-color: var(--t-fg);
+;
+  }
 
-	.byline {
-		display: block;
-		margin-top: 1rem;
-		color: var(--t-subdue);
-		font-size: var(--f-d2);
-		text-transform: uppercase;
-	}
+  .byline {
+    display: block;
+    margin-top: 1rem;
+    color: var(--t-subdue);
+    font-size: var(--f-d2);
+    text-transform: uppercase;
+  }
 </style>

@@ -11,10 +11,10 @@ function App() {
   }, []);
 
   return (
-    <div class="container byline">
-      <p class="text-zinc-400">Copyright  </p>
-      <p class="text-zinc-400">Alberto Millán &copy;{currentYear} </p>
-      <small class=" text-zinc-400">🚀 Construido con Astro</small> 
+    <div class="container byline mt-10">
+      <p class="text-zinc-500">Copyright  </p>
+      <p class="text-zinc-500">Alberto Millán &copy;{currentYear} </p>
+      <small class=" text-zinc-500">🚀 Construido con Astro</small> 
     </div>
   );
 }

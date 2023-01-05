@@ -70,8 +70,9 @@ img {
 }
 
 a {
-	color: var(---t-fg);
+	color: var(--c-blue);
 }
+
 
 h1 {
 	font-size: var(--f-u8);
@@ -101,7 +102,7 @@ h1 {
 }
 
 .text-custom-color {
-	color: #46b4ff;
+	color: var(--c-green);
   }
   .cardBuy {
 	

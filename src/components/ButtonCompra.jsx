@@ -12,7 +12,7 @@ function Button() {
   const notify = () => toast("Politicas y condiciones de la pagina");
 
   return (
-    <div class=" md:flex md:w-full md:h-full grid grid-cols-1 md:px-20  text-custom-color mt-1  md:text-left text-right md:flex-auto px-9  py-1   ">
+    <div class=" md:flex md:w-full md:h-full grid grid-cols-1   text-custom-color mt-1  md:text-left text-right md:flex-auto px-0  py-1   ">
       <div class="w-full mt-2">
         <Compras />
       </div>
@@ -26,7 +26,7 @@ function Button() {
       <div class="w-full mt-2">
         <Contacto />
       </div>
-      <div class="w-full mt-2">
+      <div class="w-full mt-1 ">
         <VolverAlComienzo />
       </div>
 
