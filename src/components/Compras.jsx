@@ -35,7 +35,7 @@ function Compras() {
           <ul>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="https://albertomillan.co/projectBuy/nested/Apps/"
               >
                 Apps{" "}
@@ -43,7 +43,7 @@ function Compras() {
             </li>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="https://albertomillan.co/projectBuy/nested/tienda-linea/"
               >
                 Tienda en Línea{" "}
@@ -51,7 +51,7 @@ function Compras() {
             </li>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="https://albertomillan.co/projectBuy/nested/chat-auto/"
               >
                 Chat Automatizado{" "}
@@ -59,7 +59,7 @@ function Compras() {
             </li>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="https://albertomillan.co/projectBuy/pagina-web/"
               >
                 Pagína Web{" "}

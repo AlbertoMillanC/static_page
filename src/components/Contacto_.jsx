@@ -31,7 +31,7 @@ const Contacto = () => {
           <ul>
             <li>
               <a
-                className="text-custom-color text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color text-cyan-600 hover:text-cyan-300"
                 href="https://t.me/Albertomillanc"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ const Contacto = () => {
             </li>
             <li>
               <a
-                className="text-custom-color text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color text-cyan-600 hover:text-cyan-300"
                 href="slack:Alberto Millán"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const Contacto = () => {
             </li>
             <li>
               <a
-                className=" text-custom-color text-cyan-600 hover:text-cyan-800"
+                className=" text-custom-color text-cyan-600 hover:text-cyan-300"
                 href="https://wa.me/51+983+824+132"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -34,7 +34,7 @@ function Links() {
           <ul>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="Privacidad"
               >
                 Política de privacidad
@@ -42,7 +42,7 @@ function Links() {
             </li>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="/terminos"
               >
                 Términos y condiciones
@@ -50,7 +50,7 @@ function Links() {
             </li>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="/politicas_cookies"
               >
                 Política de Cookies
@@ -58,7 +58,7 @@ function Links() {
             </li>
             <li>
               <a
-                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-800"
+                className="text-custom-color rounded-full text-cyan-600 hover:text-cyan-300"
                 href="/libro_de"
               >
                 📖Libro de reclamaciones
