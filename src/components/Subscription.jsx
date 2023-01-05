@@ -4,12 +4,12 @@ const Suscripcion = () => {
   };
 
   return (
-    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-800">
+    <div className="  text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-200">
       <button onClick={handleClick} title="Click para ver">
         <div class="  flex ">
           <div class="px-1">Suscripción </div>
           <div class=" py-2 ">
-            {" "}
+          
             <svg
               width="24"
               height="24"

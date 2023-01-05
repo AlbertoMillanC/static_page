@@ -5,9 +5,9 @@ function Links() {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-800">
+    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-200">
       {/* Al hacer clic en el botón, cambiamos el estado de showLinks */}
-      <button onClick={() => setShowLinks(!showLinks)}
+      <button onMouseOver={() => setShowLinks(!showLinks)}
        title="Click para ver">
         <div class="  flex ">
         <div class="px-1">Legal </div>

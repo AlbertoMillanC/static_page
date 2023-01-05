@@ -4,7 +4,7 @@ const VolverAlComienzo = () => {
   };
 
   return (
-    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-800">
+    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-200">
       <button onClick={handleClick} title="Click para ir a arriba">
         <div class="  flex ">
           <div class="px-0 py-2 ">Inicio </div>

@@ -1,21 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 function App() {
-  const [currentDate, setCurrentDate] = useState(new Date());
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
-    const updateDate = setInterval(() => {
-      setCurrentDate(new Date());
+    const updateYear = setInterval(() => {
+      setCurrentYear(new Date().getFullYear());
     }, 1000);
-    return () => clearInterval(updateDate);
+    return () => clearInterval(updateYear);
   }, []);
 
   return (
-    <div>
-      <p>
-        Copyright © {currentDate.getFullYear()} |{" "}
-        {currentDate.toLocaleString("es-CO")}
-      </p>
+    <div class="container byline">
+      <p class="text-zinc-400">Copyright  </p>
+      <p class="text-zinc-400">Alberto Millán &copy;{currentYear} </p>
+      <small class=" text-zinc-400">🚀 Construido con Astro</small> 
     </div>
   );
 }

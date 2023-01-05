@@ -6,17 +6,18 @@ import Button from '../components/ButtonCompra';
 
 const currentYear = new Date().getFullYear();
 ---
-<div >
+<div class="bg-zinc-600 px-1 py-1">
 	
 <footer>
 	<div >
-	<Button client:load />
+	<Button client:load/>
 	</div>
 
-	<div class="grip text-center py-10">
-		Alberto Millán C <br>  <DateYear/>
-	<small class="byline">🚀 Construido con Astro</small>
+	<div class="container justify-center flex flex-auto  ">
+		   <DateYear/> 	
+		
 	</div>
+	
 	
 
 </footer>

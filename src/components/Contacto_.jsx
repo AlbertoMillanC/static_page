@@ -4,8 +4,8 @@ const Contacto = () => {
   const [showLinks, setShowLinks] = useState(false);
 
   return (
-    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-800">
-      <button onClick={() => setShowLinks(!showLinks)} title="Click para ver">
+    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-200">
+      <button onMouseOver={() => setShowLinks(!showLinks)} title="Click para ver">
         <div class="  flex ">
           <div class="px-1">Contacto</div>
           <div class=" py-2 ">
@@ -27,7 +27,7 @@ const Contacto = () => {
       </button>
       {showLinks && (
         <div className=" ">
-          <div class="text-black">Puedes contactarme a través de:</div>
+          <div class="text-zinc-400">Puedes contactarme a través de:</div>
           <ul>
             <li>
               <a

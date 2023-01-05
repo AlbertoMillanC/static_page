@@ -1,16 +1,16 @@
 ---
 // Component Imports
-import MainHead from '../components/MainHead.astro';
-import Nav from '../components/Nav.astro';
-import Footer from '../components/Footer.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
-import type { Project } from '../types';
-import buttoncompra from '../components/ButtonCompra';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import MainHead from "../components/MainHead.astro";
+import Nav from "../components/Nav.astro";
+import Footer from "../components/Footer.astro";
+import PortfolioPreview from "../components/PortfolioPreview.astro";
+import type { Project } from "../types";
+import buttoncompra from "../components/ButtonCompra";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // Data Fetching: List all Markdown posts in the repo.
-const projects = await Astro.glob<Project>('./project/**/*.md');
+const projects = await Astro.glob<Project>("./project/**/*.md");
 const featuredProject = projects[0]!;
 
 // Full Astro Component Syntax:
@@ -18,292 +18,302 @@ const featuredProject = projects[0]!;
 ---
 
 <html lang="es">
-	<head>
-		
-		<MainHead
-			title="Desarrollo de paginas web"
-			my-2ription="¿Buscas una solución profesional y efectiva para tu negocio en línea? Ofrecemos servicios de diseño y desarrollo de páginas web y tiendas en línea personalizadas para adaptarnos a tus necesidades. Contamos con un equipo de expertos en tecnología y marketing que trabajarán contigo para crear una presencia en línea atractiva y efectiva para tu negocio. ¡Contáctanos hoy para más información y una cotización gratuita!"
-		/>
-		<style>
-			.wrapper {
-				margin-top: 2em;
-				margin-bottom: 2em;
-			}
+  <head>
+    <MainHead
+      title="Desarrollo de paginas web"
+      my-2ription="¿Buscas una solución profesional y efectiva para tu negocio en línea? Ofrecemos servicios de diseño y desarrollo de páginas web y tiendas en línea personalizadas para adaptarnos a tus necesidades. Contamos con un equipo de expertos en tecnología y marketing que trabajarán contigo para crear una presencia en línea atractiva y efectiva para tu negocio. ¡Contáctanos hoy para más información y una cotización gratuita!"
+    />
+    <style>
+      .wrapper {
+        margin-top: 2em;
+        margin-bottom: 2em;
+      }
 
-			.hero {
-				position: relative;
-				overflow: hidden;
-			}
+      .hero {
+        position: relative;
+        overflow: hidden;
+      }
 
-			@media (min-width: 750px) {
-				.hero {
-					height: 45vw;
-				}
-			}
+      @media (min-width: 750px) {
+        .hero {
+          height: 45vw;
+        }
+      }
 
-			.img {
-				display: block;
-				width: 100%;
-				height: auto;
-			}
+      .img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
 
-			.gradient,
-			.gradient2 {
-				background-image: url('/assets/mesh-gradient.jpg');
-				background-size: cover;
-				pointer-events: none;
-				mix-blend-mode: screen;
-				opacity:0.85;
-				width: 100%;
-				height: 100%;
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: 2;
-			}
+      .gradient,
+      .gradient2 {
+        background-image: url("/assets/mesh-gradient.jpg");
+        background-size: cover;
+        pointer-events: none;
+        mix-blend-mode: screen;
+        opacity: 0.85;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
 
-			.gradient2 {
-				mix-blend-mode: multiply ;
-				background-size: cover;
-			}
+      .gradient2 {
+        mix-blend-mode: multiply;
+        background-size: cover;
+      }
 
-			.overlay {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				z-index: 10;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				justify-content: center;
-				padding-left: 2rem;
-			}
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 2rem;
+      }
 
-			@media (min-width: 750px) {
-				.overlay {
-					padding-left: 4rem;
-				}
-			}
+      @media (min-width: 750px) {
+        .overlay {
+          padding-left: 4rem;
+        }
+      }
 
-			.title {
-				font-weight: 900;
-				font-size: var(--f-u6);
-				margin-bottom: 0.5rem;
-				margin-top: 0;
-			}
+      .title {
+        font-weight: 900;
+        font-size: var(--f-u6);
+        margin-bottom: 0.5rem;
+        margin-top: 0;
+      }
 
-			@media (min-width: 750px) {
-				.title {
-					font-size: var(--f-u12);
-				}
-			}
+      @media (min-width: 750px) {
+        .title {
+          font-size: var(--f-u12);
+        }
+      }
 
-			.grid {
-				display: grid;
-				grid-gap: 2rem;
-			}
+      .grid {
+        display: grid;
+        grid-gap: 2rem;
+      }
 
-			@media (min-width: 1200px) {
-				.grid {
-					grid-template-columns: 2fr 1fr;
-				}
-			}
+      @media (min-width: 1200px) {
+        .grid {
+          grid-template-columns: 2fr 1fr;
+        }
+      }
 
-			.sectionTitle {
-				font-weight: 700;
-				font-size: var(--f-u8);
-				margin-top: 4rem;
-				margin-bottom: 2rem;
-			}
-			
-			
-			.roles {
-				display: flex; 
-				flex-wrap: wrap-reverse;
-				gap: 0.5em;
-				font-size: var(--f-d1);
-				
-			}
-			
-			.role1 {
-				position: relative;
-				display: flex;
-				white-space: nowrap;
-				font-weight: 400;
-				color: var(--t-fg);
-				padding: 0.25em 0.5em;
-				z-index: 2;
-				font-size: larger;
-			}
+      .sectionTitle {
+        font-weight: 700;
+        font-size: var(--f-u8);
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+      }
 
-			@media (min-width: 750px) {
-				.role1 {
-					font-size: var(--f-u3);
-				}
-			}
+      .roles {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 0.5em;
+        font-size: var(--f-d1);
+      }
 
-			.role1:nth-of-type(1) .invert {
-				background-color: var(--c-pink);
-			}
+      .role1 {
+        position: relative;
+        display: flex;
+        white-space: nowrap;
+        font-weight: 400;
+        color: var(--t-fg);
+        padding: 0.25em 0.5em;
+        z-index: 2;
+        font-size: larger;
+      }
 
-			.role1:nth-of-type(2) .invert {
-				background-color: var(--c-blue);
-			}
+      @media (min-width: 750px) {
+        .role1 {
+          font-size: var(--f-u3);
+        }
+      }
 
-			.role1:nth-of-type(3) .invert {
-				background-color: var(--c-green);
-			}
+      .role1:nth-of-type(1) .invert {
+        background-color: var(--c-pink);
+      }
 
-			.role1:hover .invert {
-				clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-			}
+      .role1:nth-of-type(2) .invert {
+        background-color: var(--c-blue);
+      }
 
-			.roles {
-				display: flex; 
-				flex-wrap: wrap-reverse;
-				gap: 0.5em;
-				font-size: var(--f-d1);
-			}
-			
-			.role {
-				position: relative;
-				display: inline-block;
-				white-space: nowrap;
-				font-weight: 900;
-				color: var(--t-bg);
-				background-color: var(--t-fg);
-				padding: 0.25em 0.5em;
-				z-index: 2;
-			}
+      .role1:nth-of-type(3) .invert {
+        background-color: var(--c-green);
+      }
 
-			@media (min-width: 750px) {
-				.role {
-					font-size: var(--f-u3);
-				}
-			}
+      .role1:hover .invert {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
 
-			.role:nth-of-type(1) .invert {
-				background-color: var(--c-pink);
-			}
+      .roles {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        gap: 0.5em;
+        font-size: var(--f-d1);
+      }
 
-			.role:nth-of-type(2) .invert {
-				background-color: var(--c-blue);
-			}
+      .role {
+        position: relative;
+        display: inline-block;
+        white-space: nowrap;
+        font-weight: 900;
+        color: var(--t-bg);
+        background-color: var(--t-fg);
+        padding: 0.25em 0.5em;
+        z-index: 2;
+      }
 
-			.role:nth-of-type(3) .invert {
-				background-color: var(--c-green);
-			}
+      @media (min-width: 750px) {
+        .role {
+          font-size: var(--f-u3);
+        }
+      }
 
-			.role:hover .invert {
-				clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-			}
+      .role:nth-of-type(1) .invert {
+        background-color: var(--c-pink);
+      }
 
-			.invert {
-				position: absolute;
-				color: var(--t-fg);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				pointer-events: none;
-				clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
-				transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
-			}
+      .role:nth-of-type(2) .invert {
+        background-color: var(--c-blue);
+      }
 
-			.my-2 {
-				font-size: var(--f-u1);
-				margin-top: 1.5rem;
-				margin-bottom: 0;
-			}
+      .role:nth-of-type(3) .invert {
+        background-color: var(--c-green);
+      }
 
-			.subtitle {
-				display: block;
-				font-weight: 400;
-				font-size: var(--f-d6);
-				letter-spacing: -0.0625em;
-			}
+      .role:hover .invert {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
 
-			.bio {
-				line-height: 2;
-				margin-bottom: 2rem;
-			}
+      .invert {
+        position: absolute;
+        color: var(--t-fg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        clip-path: polygon(0% 100%, 100% 100%, 100% 200%, 0% 200%);
+        transition: clip-path cubic-bezier(0.4, 0, 0.5, 1) 150ms;
+      }
 
-			.bio > span:first-of-type {
-				line-height: 1;
-				margin-bottom: 0.5em;
-				display: block;
-				font-weight: 700;
-				font-size: var(--f-u4);
-			}
+      .my-2 {
+        font-size: var(--f-u1);
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+      }
 
-			.buttonContainer {
-				text-align: center;
-				margin-top: 2em;
-			}
-		</style>
-	
-	</head>
-	<body>
-		<Nav />
-		<header class="hero flex-1 ">
-			<img 
-				
-				class="img"
-				src="/assets/image_es.jpg"
-				srcset="/assets/image_es.jpg 800w,/assets/image_es.jpg 1200w,/assets/image_es.jpg 2400w"
-				sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
+      .subtitle {
+        display: block;
+        font-weight: 400;
+        font-size: var(--f-d6);
+        letter-spacing: -0.0625em;
+      }
 
-			/>
-			<div class="gradient"></div>
-			<div class="gradient2"></div>
-			<div class="overlay">
-				<h1 class="title">
-					<small class="subtitle ">Compra un sitio web diseñado por:</small>Alberto Millán
-				</h1>
-				<div class="roles">
-					<button class="role">📤Desarrollo Web<span class="invert">👩‍💻Web Developer</span></button>
-					<button class="role">👨🏻‍💻SysAdmin<span class="invert">🔧SysAdmin</span></button>
-					<button class="role">🗂Datos<span class="invert">🗂 Data </span></button>
-				</div >
+      .bio {
+        line-height: 2;
+        margin-bottom: 2rem;
+      }
 
-				<div class= "roles">
-					<p class="role1">☁Cloud</p>
-					<p class="role1">🔧CyberSecurity</p>
-					<p class="role1"> ✏️CopyWriting</p>
-				</div>
-				
-			</div>
-			
-		</header>
-	
-		<main class="wrapper">
-			<div class="grid">
-				<div class="section">
-					
-					<h3 class="sectionTitle "> Servicios</h3>
-					
-					<PortfolioPreview project={featuredProject} />
-					<div class="buttonContainer">
-						<a href="/projects/" class="button">Ver más</a>
-					</div>
-				</div>
-				<div class="section">
-					<h3 class="sectionTitle"></h3>
-					<p class="bio">
-						<span>Hola!</span> Soy Alberto,un profesional especializado en desarrollo web, SysAdmin y DevOps. Ofrezco una {' '}
-						amplia gama de servicios de desarrollo web en diferentes tecnologías,
-					</p>
-					<p>
-						<a href="/about">Leer más</a>
-					</p>
-				</div>
-			</div>
-		</main>
-		<Footer />
-	</body>
+      .bio > span:first-of-type {
+        line-height: 1;
+        margin-bottom: 0.5em;
+        display: block;
+        font-weight: 700;
+        font-size: var(--f-u4);
+      }
+
+      .buttonContainer {
+        text-align: center;
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <Nav />
+    <header class="hero flex-1">
+      <img
+        class="img"
+        src="/assets/image_es.jpg"
+        srcset="/assets/image_es.jpg 800w,/assets/image_es.jpg 1200w,/assets/image_es.jpg 2400w"
+        sizes="(max-width: 800px) 800px, (max-width: 1200px) 1200px, (max-width: 1600px) 1600px, (max-width: 2400px) 2400px, 1200px"
+      />
+      <div class="gradient"></div>
+      <div class="gradient2"></div>
+      <div class="overlay">
+        <h1 class="title">
+          <small class="subtitle">Compra un sitio web diseñado por:</small
+          >Alberto Millán
+        </h1>
+        <div class="roles">
+          <button class="role"
+            >📤Desarrollo Web<span class="invert">👩‍💻Web Developer</span></button
+          >
+          <button class="role"
+            >👨🏻‍💻SysAdmin<span class="invert">🔧SysAdmin</span></button
+          >
+          <button class="role">🗂Datos<span class="invert">🗂 Data</span></button>
+        </div>
+
+        <div class="roles">
+          <p class="role1">☁Cloud</p>
+          <p class="role1">🔧CyberSecurity</p>
+          <p class="role1">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="2" y="5" width="20" height="14" rx="2" fill="#E5E5E5"
+              ></rect>
+              <path d="M22 18H2V6H22V18Z" fill="#E5E5E5"></path>
+            </svg>
+            Chat IA
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="wrapper">
+      <div class="grid">
+        <div class="section ">
+          <h3 class="sectionTitle">Servicios</h3>
+
+          <PortfolioPreview project={featuredProject} />
+          <div class="buttonContainer ">
+            <a href="/projects/" class="button">Ver más</a>
+          </div>
+        </div>
+        <div class="section">
+          <h3 class="sectionTitle"></h3>
+          <p class="bio">
+            <span>Hola!</span> Soy Alberto,un profesional especializado en desarrollo
+            web, SysAdmin y DevOps. Ofrezco una {" "}
+            amplia gama de servicios de desarrollo web en diferentes tecnologías,
+          </p>
+          <p>
+            <a href="/about">Leer más</a>
+          </p>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
 </html>

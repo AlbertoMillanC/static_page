@@ -4,9 +4,9 @@ function Compras() {
   const [mostrarCompras, setMostrarCompras] = useState(false);
 
   return (
-    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-800">
+    <div className="text-custom-color text-center rounded-full text-cyan-600 hover:text-cyan-200">
       <button
-        onClick={() => {
+        onMouseOver={() => {
           setMostrarCompras(!mostrarCompras);
         }}
         title="Click para ver"
