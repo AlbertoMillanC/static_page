@@ -28,6 +28,18 @@ const Contacto = () => {
         <div className=" ">
           <div class="text-zinc-400">Puedes contactarme a través de:</div>
           <ul>
+          <li>
+              <a
+                className=" text-custom-color text-cyan-600 hover:text-cyan-300"
+                href="mailto:info@albertomillan.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Se abrirá una nueva página"
+              >
+                Correo Electronico
+              </a>
+              
+            </li>
             <li>
               <a
                 className="text-custom-color text-cyan-600 hover:text-cyan-300"
@@ -60,7 +72,9 @@ const Contacto = () => {
               >
                 WhatsApp
               </a>
+              
             </li>
+            
           </ul>
         </div>
       )}
