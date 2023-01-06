@@ -5,7 +5,7 @@ import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 import type { Project } from "../types";
-import buttoncompra from "../components/ButtonCompra";
+import buttoncompra from "../components/reactComponents/ButtonCompra";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -314,7 +314,11 @@ const featuredProject = projects[0]!;
           </p>
         </div>
       </div>
+      
     </main>
+   
     <Footer />
+   
+    
   </body>
 </html>
