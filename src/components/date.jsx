@@ -11,9 +11,9 @@ function App() {
   }, []);
 
   return (
-    <div class="container byline mt-10">
-      <p class="text-zinc-500">Copyright  </p>
-      <p class="text-zinc-500">Alberto Millán &copy;{currentYear} </p>
+    <div class="container grid byline mt-10">
+      <small class="text-zinc-500">Copyright  </small>
+      <small class="text-zinc-500">Alberto Millán &copy;{currentYear} </small>
       <small class=" text-zinc-500">🚀 Construido con Astro</small> 
     </div>
   );
