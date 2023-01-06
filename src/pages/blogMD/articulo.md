@@ -1,9 +1,9 @@
 ---
 layout: ../../layouts/project.astro
-title: Mejora tu negocio con la optimización del SEO
+title: SEO
 client: Self
 publishDate: 2023-01-04 00:00:00
-img: https://images.pexels.com/photos/5632397/pexels-photo-5632397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
+img: https://images.pexels.com/photos/907607/pexels-photo-907607.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 description: |
   ¿Quieres atraer más tráfico cualificado a tu sitio web y mejorar el rendimiento de tu negocio en línea? La optimización del SEO puede ayudar. Aprende cómo implementar técnicas de SEO en tu sitio web y ver cómo tu negocio florece.
 tags:
