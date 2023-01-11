@@ -5,7 +5,7 @@ client: Self
 publishDate: 2023-01-04 00:00:00
 img: https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 description: |
-  Aprende por qué es importante contar con un sitio web para tu negocio y cómo contratar un servicio de desarrollo web para mejorar tu presencia en línea. Descubre los beneficios que puede aportar un sitio web y cómo mantenerlo y actualizarlo para aprovechar al máximo su potencial.
+  "El éxito de una aplicación móvil depende en gran medida de su presencia en las tiendas de aplicaciones"
 tags:
   - sitio web   
   - tiendaenlínea
