@@ -5,7 +5,7 @@ client: Self
 publishDate: 2023-01-04 00:00:00
 img: https://images.pexels.com/photos/8107906/pexels-photo-8107906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1
 description: |
-  Aprende por qué es importante contar con un sitio web para tu negocio y cómo contratar un servicio de desarrollo web para mejorar tu presencia en línea. Descubre los beneficios que puede aportar un sitio web y cómo mantenerlo y actualizarlo para aprovechar al máximo su potencial.
+  A La ciberseguridad es el conjunto de técnicas, herramientas y medidas que se utilizan para proteger los sistemas informáticos y las redes de comunicaciones de los ataques maliciosos, la violación de la privacidad y la divulgación no autorizada de información.
 tags:
   - Cyber 
   - Hack
