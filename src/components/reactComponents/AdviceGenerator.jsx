@@ -1,17 +1,19 @@
 import React, { useEffect, useState } from 'react';
+import '../getAdvice'
 
-function App() {
-  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+const AdeviseGenerator = ({advice}) => {
+  const[response,setResponse] = useState(advice)
 
-  useEffect(() => {
-    const updateYear = setInterval(() => {
-      setCurrentYear(new Date().getFullYear());
-    }, 1000);
-    return () => clearInterval(updateYear);
-  }, []);
+  const onClickButton = async ()=> {
+    const response = await getAdvice()
+    setResponse(response)
+  }
+
 
   return (
     <div class="container grid byline mt-10">
+      <label >{response}</label>
+      <button onClick={()=> onClickButton()}>Get advice</button>
       <small class="text-zinc-500">Copyright  </small>
       <small class="text-zinc-500">Alberto Millán &copy;{currentYear} </small>
       <small class=" text-zinc-500">🚀 Construido con Astro</small> 
